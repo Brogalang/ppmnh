@@ -70,4 +70,14 @@ class AbsenStafController extends Controller
        return view('admin.absensi.laporanStaf',['users'=>$users]);
     }
 
+    public function metamorph()
+    {
+     	$users = DB::table('absenstaf')
+		->join('staf', 'absenstaf.nip_staf', '=', 'staf.nip_staf')
+		->select('absenstaf.*', 'staf.nama_staf')
+		->get();
+   
+       return view('front.awal.metamorphabsen',['users'=>$users]);
+    }
+
 }

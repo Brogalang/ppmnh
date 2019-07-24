@@ -20,6 +20,12 @@ Route::get('/santri', function () {
     return view('/front/awal/santri');
 })->name('santri');
 
+// Route::get('/metamorph', function () {
+//     return view('/front/awal/metamorph');
+// })->name('metamorph');
+Route::get('/metamorph', 'stafController@metamorph')->name('metamorph');
+Route::get('/absen_metamorph', 'absenstafController@metamorph')->name('absen_metamorph');
+
 
 
 // Route::get('/test', 'PagesController@index'); // localhost:8000/

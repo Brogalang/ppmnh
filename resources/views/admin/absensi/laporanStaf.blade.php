@@ -56,7 +56,7 @@
                 <?php $nomer++; ?>
                 </tr>
                 @endforeach
-                </tfoot>
+                </tbody>
 
                 </table>
             </div>

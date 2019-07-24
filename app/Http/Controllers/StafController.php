@@ -38,6 +38,12 @@ class StafController extends Controller
         // }
         $staf = Staf::all();
         return view('admin/staf/staf', ['staf' => $staf]);
+
+    }
+    public function metamorph()
+    {
+        $staf = Staf::all();
+        return view('front/awal/metamorph', ['staf' => $staf]);
     }
     
     public function show(Staf $nip_staf)
@@ -126,6 +132,7 @@ class StafController extends Controller
         $staf->tempat_lahir_staf = request('tempat_lahir_staf');
         $staf->tgl_lahir_staf = request('tgl_lahir_staf');
         $staf->no_telp_staf = request('no_telp_staf');
+
         $staf->univ_staf = request('univ_staf');
         // if(!is_null($request->file('image'))){
         //     $file = $request->file('image')->store('public/files/staf');
