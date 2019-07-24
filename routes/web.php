@@ -14,7 +14,7 @@
 
 Route::get('/', function () {
     return view('/front/awal/home');
-});
+})->name('awal');
 
 
 

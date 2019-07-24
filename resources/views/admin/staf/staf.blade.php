@@ -32,6 +32,7 @@
                     <th>Tempat Lahir</th>
                     <th>Tanggal Lahir</th>
                     <th>No Tlp</th>
+                    <th>Universitas</th>
                     <th>Tindakan</th>
                 </tr>
                 </thead>
@@ -55,6 +56,7 @@
                     <td>{{ $row->tempat_lahir_staf}}</td>
                     <td>{{ $row->tgl_lahir_staf}}</td>
                     <td>{{ $row->no_telp_staf}}</td>
+                    <td>{{ $row->univ_staf}}</td>
                     <td>
                         <a href="{{url('/staf/hapus/'.$row->nip_staf)}}" class="btn btn-sm btn-danger">Hapus</a>
                         <a href="{{route('editStaf', $row->nip_staf)}}" class="btn btn-sm btn-primary">Edit</a>

@@ -45,20 +45,6 @@
                   </div>
                 </div>
                 <div class="form-group">
-                  <label for="inputEmail3" class="col-sm-2">Email</label>
-
-                  <div class="col-sm-10">
-                    <input name="email" type="email" class="form-control" id="inputEmail3" placeholder="Email" required>
-                  </div>
-                </div>
-                <div class="form-group">
-                  <label for="inputAlamat" class="col-sm-2">Alamat</label>
-
-                  <div class="col-sm-10">
-                    <textarea name="alamat" class="form-control" id="inputAlamat" cols="30" rows="4" required></textarea>
-                  </div>
-                </div>
-                <div class="form-group">
                   <label for="inputTempatLahir" class="col-sm-2">Tempat Lahir</label>
 
                   <div class="col-sm-10">
@@ -80,34 +66,6 @@
                   </div>
                 </div>
                 <div class="form-group">
-                  <label for="inputTanggalMasuk" class="col-sm-2">Tanggal Masuk</label>
-
-                  <div class="col-sm-10">
-                    <input name="tgl_masuk" type="date" class="form-control" id="inputTanggalMasuk" required>
-                  </div>
-                </div>
-                <div class="form-group">
-                  <label for="inputPend" class="col-sm-2">Pendidikan Terakhir</label>
-
-                  <div class="col-sm-10">
-                    <input name="pend_terakhir" type="text" class="form-control" id="inputPend" required>
-                  </div>
-                </div>
-                <div class="form-group">
-                  <label for="inputJabatan" class="col-sm-2">Jabatan</label>
-
-                  <div class="col-sm-10">
-                    <input name="jabatan" type="text" class="form-control" id="inputJabatan" required>
-                  </div>
-                </div>
-                <div class="form-group">
-                  <label for="inputBoarding" class="col-sm-2">Boarding/PP</label>
-
-                  <div class="col-sm-10">
-                    <input name="boarding" type="text" class="form-control" id="inputBoarding" required>
-                  </div>
-                </div>
-                <div class="form-group">
                   <label for="inputNikah" class="col-sm-2">Status Pernikahan</label>
 
                   <div class="col-sm-10">
@@ -115,14 +73,6 @@
                     <input name="status_nikah" type="radio" id="inputNikah" value="Belum Menikah">Belum Menikah
                   </div>
                 </div>
-                <div class="form-group">
-                  <label for="inputKel" class="col-sm-2">Jumlah Keluarga</label>
-
-                  <div class="col-sm-10">
-                    <input name="jumlah_kel" type="text" class="form-control" id="inputKel">
-                  </div>
-                </div>
-              </div>
               <!-- /.box-body -->
               <div class="box-footer">
                 <button type="submit" class="btn btn-default">Cancel</button>

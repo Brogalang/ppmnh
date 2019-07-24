@@ -25,13 +25,13 @@
                 <thead>
                 <tr>
                     <th>NO</th>
-                    <th>NIP</th>
+                    <th>ID</th>
                     <th>Foto</th>
                     <th>Nama</th>
-                    <th>Alamat</th>
                     <th>Tempat Lahir</th>
                     <th>Tanggal Lahir</th>
                     <th>No Tlp</th>
+                    <th>Status Pernikahan</th>
                     <th>Tindakan</th>
                 </tr>
                 </thead>
@@ -51,10 +51,10 @@
                         <td><img class="img-fluid" style="height: 50px"  src="{{asset('images/file/'.$row->image)}}"></td>
                     @endif
                     <td>{{ $row->nama}}</td>
-                    <td>{{ $row->alamat}}</td>
                     <td>{{ $row->tempat_lahir}}</td>
                     <td>{{ $row->tgl_lahir}}</td>
                     <td>{{ $row->no_telp}}</td>
+                    <td>{{ $row->status_nikah}}</td>
                     <td>
                         <a href="{{url('/guru/hapus/'.$row->nip)}}" class="btn btn-sm btn-danger">Hapus</a>
                         <a href="{{route('editGuru', $row->nip)}}" class="btn btn-sm btn-primary">Edit</a>

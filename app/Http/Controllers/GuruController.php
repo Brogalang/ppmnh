@@ -121,17 +121,10 @@ class GuruController extends Controller
         $guru = new Guru;
         $guru->nip = request('nip');
         $guru->nama = request('nama');
-        $guru->email = request('email');
-        $guru->alamat = request('alamat');
         $guru->tempat_lahir = request('tempat_lahir');
         $guru->tgl_lahir = request('tgl_lahir');
         $guru->no_telp = request('no_telp');
-        $guru->tgl_masuk = request('tgl_masuk');
-        $guru->pend_terakhir = request('pend_terakhir');
-        $guru->jabatan = request('jabatan');
-        $guru->boarding = request('boarding');
         $guru->status_nikah = request('status_nikah');
-        $guru->jumlah_kel = request('jumlah_kel');
         // if(!is_null($request->file('image'))){
         //     $file = $request->file('image')->store('public/files/guru');
         //     $filename = $request->file('image')->hashName();
@@ -174,17 +167,10 @@ class GuruController extends Controller
 
         DB::table('guru')->where('nip',$request->nip)->update([
         'nama' => $request->nama,
-        'email' => $request->email,
-        'alamat' => $request->alamat,
         'tempat_lahir' => $request->tempat_lahir,
         'tgl_lahir' => $request->tgl_lahir,
         'no_telp' => $request->no_telp,
-        'tgl_masuk' => $request->tgl_masuk,
-        'pend_terakhir' => $request->pend_terakhir,
-        'jabatan' => $request->jabatan,
-        'boarding' => $request->boarding,
-        'status_nikah' => $request->status_nikah,
-        'jumlah_kel' => $request->jumlah_kel
+        'status_nikah' => $request->status_nikah
         
         ]);
 

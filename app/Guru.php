@@ -12,19 +12,11 @@ class Guru extends Model
 
         protected $fillable = [
     	'nip',
-        'id_kelas',
     	'nama',
-    	'email',
-    	'alamat',
     	'tempat_lahir',
     	'tgl_lahir',
     	'no_telp',
-    	'tgl_masuk',
-        'pend_terakhir',
-        'jabatan',
-        'boarding',
         'status_nikah',
-        'jumlah_kel',
         'image'
     ];
 
@@ -34,8 +26,8 @@ class Guru extends Model
     	// return $this->hasOne('App\UserProfile', 'profile_user_id', 'user_id');
 	}
 
-    public function kelas()
-    {
-        return $this->belongsTo('App\Kelas', 'id_kelas', 'id');
-    }
+    // public function kelas()
+    // {
+    //     return $this->belongsTo('App\Kelas', 'id_kelas', 'id');
+    // }
 }
