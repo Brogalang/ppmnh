@@ -14,7 +14,7 @@
     <div class="col-xs-12">
         <div class="box">
             <div class="box-header">
-                <h3 class="box-title">Data Siswa PSDI</h3>
+                <h3 class="box-title">Data Santri PPMNH</h3>
             </div>
 <!-- /.box-header -->
             <div class="box-body">
@@ -22,10 +22,10 @@
                 <thead>
                 <tr>
                     <th>NO</th>
-                    <th>NIS</th>
+                    <th>ID</th>
                     <th>foto</th>
                     <th>Nama</th>
-                    <th>Kelas</th>
+                    <th>Penerobos</th>
                     <th>Tempat Lahir</th>
                     <th>Tanggal Lahir</th>
                     <th>Jenis Kelamin</th>

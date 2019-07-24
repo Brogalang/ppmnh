@@ -127,11 +127,7 @@ class StafController extends Controller
         $staf->tgl_lahir_staf = request('tgl_lahir_staf');
         $staf->no_telp_staf = request('no_telp_staf');
         $staf->tgl_masuk_staf = request('tgl_masuk_staf');
-        $staf->pend_terakhir_staf = request('pend_terakhir_staf');
-        $staf->jabatan_staf = request('jabatan_staf');
-        $staf->boarding_staf = request('boarding_staf');
-        $staf->status_nikah_staf = request('status_nikah_staf');
-        $staf->jumlah_kel_staf = request('jumlah_kel_staf');
+        $staf->univ_staf = request('univ_staf');
         // if(!is_null($request->file('image'))){
         //     $file = $request->file('image')->store('public/files/staf');
         //     $filename = $request->file('image')->hashName();

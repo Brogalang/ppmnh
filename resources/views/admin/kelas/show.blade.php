@@ -15,23 +15,16 @@
         <div class="box">
             <div class="box-header">
                 @foreach ($kelas as $kelas)
-                <h3 class="box-title" style="margin: 0px 0px 20px">Data Kelas {{ $kelas->nama}}</h3>
+                <h3 class="box-title" style="margin: 0px 0px 20px">Data Penerobos {{ $kelas->nama}}</h3>
                 <div class="row form-group">
                     <div class="col col-sm-2">
-                        <p>Kode Kelas :</p>
+                        <p>Nama Penerobos :</p>
                     </div>
                     <div>
-                        <label>{{ $kelas->kode_kelas}}</label>
+                        <label>{{ $kelas->nama}}</label>
                     </div>
                 </div>
-                <div class="row form-group">
-                    <div class="col col-sm-2">
-                        <p>Jenis Kelas :</p>
-                    </div>
-                    <div>
-                        <label>{{$kelas->jenis_kelas}}</label>
-                    </div>
-                </div>
+               
                 @endforeach
                 <!-- <a href="{{url('/kelas/create')}}" class="btn btn-sm btn-success pull-right">
                     <i class="fa fa-plus"></i> Tambah

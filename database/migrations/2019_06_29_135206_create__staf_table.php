@@ -21,12 +21,7 @@ class CreateStafTable extends Migration
             $table->string('tempat_lahir_staf',100);
             $table->date('tgl_lahir_staf');
             $table->string('no_telp_staf',20);
-            $table->date('tgl_masuk_staf');
-            $table->string('pend_terakhir_staf',20);
-            $table->string('jabatan_staf',100);
-            $table->string('boarding_staf',100);
-            $table->string('status_nikah_staf',100);
-            $table->integer('jumlah_kel_staf', false, true)->length(20);
+            $table->string('univ_staf');
             $table->text('image')->nullable();
             $table->timestamps();
         });

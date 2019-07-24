@@ -38,15 +38,11 @@
                   </div>
                 </div>
                 <div class="form-group">
-                  <label for="inputJenisKelas" class="col-sm-2">Jenis Kelas</label>
+                  <label for="inputJenisKelas" class="col-sm-2"></label>
 
                   <div class="col-sm-10">
                     <div class="col-sm-10">
-                    <input name="jenis_kelas" type="radio" id="jenis_kelas" value="Reguler" checked>Reguler<br>
-                    <input name="jenis_kelas" type="radio" id="jenis_kelas" value="Pramubaligh">Pra Mubaligh<br>
-                    <input name="jenis_kelas" type="radio" id="jenis_kelas" value="Pascamubaligh">Pasca Mubaligh<br>
-                    <input name="jenis_kelas" type="radio" id="jenis_kelas" value="Bimbel">Bimbel<br>
-                    <input name="jenis_kelas" type="radio" id="jenis_kelas" value="Pesantren">Pesantren
+                    <input name="jenis_kelas" type="radio" id="jenis_kelas" value="Reguler" checked><br>
                   </div>
                 </div>
               </div>
