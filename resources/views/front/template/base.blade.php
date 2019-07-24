@@ -45,7 +45,11 @@
       }
 
       #myBtn:hover {
+<<<<<<< HEAD
         background-color: none;
+=======
+        background-color: black;
+>>>>>>> 57ac118e0dcd6c26ab154f81b4833b28b4e7c092
       }
 
       .button-flat-circle {
@@ -101,7 +105,8 @@
 
                     <ul class="site-menu js-clone-nav d-none d-lg-block">
                       <li class="active">
-                        <a href="index.html">Home</a>
+
+                        <a href="{{route('awal')}}">Home</a>
                       </li>
                       <li class="has-children">
                         <a href="beliefs.html">About</a>
@@ -111,7 +116,8 @@
                           <li><a href="beliefs.html">Why Join PPM NH ?</a></li>
                         </ul>
                       </li>
-                      <li><a href="events.html">Santri</a></li>
+
+                      <li><a href="{{route('santri')}}">Tim Kreatif</a></li>
                       <li><a href="about.html">Guru</a></li>
                       <li><a href="{{url('/home')}}">Login</a></li>
                     </ul>

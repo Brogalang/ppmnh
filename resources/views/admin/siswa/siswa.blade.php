@@ -76,15 +76,14 @@
                 <tfoot>
                 <tr>
                     <th>NO</th>
-                    <th>NIS</th>
+                    <th>ID</th>
                     <th>foto</th>
                     <th>Nama</th>
-                    <th>Kelas</th>
+                    <th>Penerobos</th>
                     <th>Tempat Lahir</th>
                     <th>Tanggal Lahir</th>
                     <th>Jenis Kelamin</th>
                     <th>Alamat</th>
-
                     <th>Tindakan</th>
                 </tr>
                 </tfoot>

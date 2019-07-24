@@ -45,6 +45,7 @@
                   </div>
                 </div>
                 <div class="form-group">
+
                   <label for="inputTempatLahir" class="col-sm-2">Tempat Lahir</label>
 
                   <div class="col-sm-10">
@@ -66,6 +67,7 @@
                   </div>
                 </div>
                 <div class="form-group">
+
                   <label for="inputNikah" class="col-sm-2">Status Pernikahan</label>
 
                   <div class="col-sm-10">

@@ -17,6 +17,7 @@ class Guru extends Model
     	'tgl_lahir',
     	'no_telp',
         'status_nikah',
+
         'image'
     ];
 
@@ -26,8 +27,4 @@ class Guru extends Model
     	// return $this->hasOne('App\UserProfile', 'profile_user_id', 'user_id');
 	}
 
-    // public function kelas()
-    // {
-    //     return $this->belongsTo('App\Kelas', 'id_kelas', 'id');
-    // }
 }

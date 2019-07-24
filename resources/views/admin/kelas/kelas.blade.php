@@ -50,7 +50,6 @@
                     <th>NO</th>
                     <th>Kode</th>
                     <th>Nama</th>
-                    <th>Jenis Kelas</th>
                     <th>Tindakan</th>
                    <!--  <th>Nama</th>
                     <th>Wali Kelas</th>

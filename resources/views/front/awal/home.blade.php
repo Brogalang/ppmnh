@@ -3,21 +3,31 @@
 <div style="height: 113px;"></div>
     <div class="slide-one-item home-slider owl-carousel">
       
-      <div class="site-blocks-cover" style="background-image: url(assets/front/images/hero_b1_1.jpg);" data-aos="fade" data-stellar-background-ratio="0.5">
+
+      <div class="site-blocks-cover" style="background-image: url(assets/front/images/IMG_1397.jpg);" data-aos="fade" data-stellar-background-ratio="0.5">
         <div class="container">
           <div class="row align-items-center justify-content-center">
             <div class="col-md-7 text-center" data-aos="fade">
-              <h1>For The Time <strong>Is At Hand</strong></h1>
+              <h1>Rectoverso <strong>Keakraban 2018</strong></h1>
             </div>
           </div>
         </div>
       </div>  
-
-      <div class="site-blocks-cover" style="background-image: url(assets/front/images/hero_bg_2.jpg);" data-aos="fade" data-stellar-background-ratio="0.5">
+      <div class="site-blocks-cover" style="background-image: url(assets/front/images/IMG_7203.jpg);" data-aos="fade" data-stellar-background-ratio="0.5">
         <div class="container">
           <div class="row align-items-center justify-content-center">
             <div class="col-md-7 text-center" data-aos="fade">
-              <h1>The <strong>Truth</strong> Will Set You Free</h1>
+              <h1>PPM <strong>NH GO</strong> Pekan Olahraga</h1>
+            </div>
+          </div>
+        </div>
+      </div> 
+
+      <div class="site-blocks-cover" style="background-image: url(assets/front/images/IMG_4945.jpg);" data-aos="fade" data-stellar-background-ratio="0.5">
+        <div class="container">
+          <div class="row align-items-center justify-content-center">
+            <div class="col-md-7 text-center" data-aos="fade">
+              <h1><strong>PPM Awards</strong><br>Penghargaan Bagi Para Santri</br></h1>
             </div>
           </div>
         </div>
@@ -28,8 +38,8 @@
       <div class="container">
         <div class="row">
           <div class="col-md-6 mx-auto text-center mb-5 section-heading">
-            <h2 class="mb-5">Latest Sermon</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus molestiae repudiandae voluptatum dicta neque.</p>
+            <h2 class="mb-5">PPM Nurul Hakim</h2>
+            <p>Semua kegiatan yang ada di PPM Barokah, yuk daftar..!</p>
           </div>
         </div>
 
@@ -38,22 +48,21 @@
             <h3 class="h5"><span class="text-uppercase">&ldquo;Thy Kingdom Come&rdquo;</span> &mdash; <span class="small"><em>by</em> Pastor Edward Cane</span></h3>
           </div>
           <div class="col-12">
-            <div class="player">
+            <div class="player"><!-- 
                 <audio id="player2" preload="none" controls style="max-width: 100%">
                     <source src="http://www.largesound.com/ashborytour/sound/AshboryBYU.mp3" type="audio/mp3">
-                </audio>
+                </audio> -->
             </div>
           </div>
         </div>
 
       </div>
     </div>
-
     <div class="site-section">
       <div class="container">
         <div class="row align-items-center">
           <div class="col-md-6 mb-5 mb-md-0">
-            
+
               <div class="img-border">
                 <a href="https://vimeo.com/28959265" class="popup-vimeo image-play">
                   <span class="icon-wrap">
@@ -62,7 +71,7 @@
                   <img src="images/about_3.jpg" alt="" class="img-fluid">
                 </a>
               </div>
-            
+
           </div>
           <div class="col-md-5 ml-auto">
             <h2 class="h2 mb-3">About Our Church</h2>

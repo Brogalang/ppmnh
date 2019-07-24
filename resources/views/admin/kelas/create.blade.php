@@ -39,7 +39,6 @@
                 </div>
                 <div class="form-group">
                   <label for="inputJenisKelas" class="col-sm-2"></label>
-
                   <div class="col-sm-10">
                     <div class="col-sm-10">
                     <input name="jenis_kelas" type="radio" id="jenis_kelas" value="Reguler" checked><br>

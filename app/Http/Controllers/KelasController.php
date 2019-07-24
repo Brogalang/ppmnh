@@ -53,7 +53,6 @@ class KelasController extends Controller
         $kelas = DB::select('select * from kelas where id = ?', [$id]);
         if((DB::table('kelas')->where('id','=',$id)->value('jenis_kelas'))=='Reguler')
             $siswa = DB::select('select * from siswa where id_kelas = ?', [$id]);
-       
         // return $test;
         return view('admin.kelas.show', ['kelas' => $kelas], ['siswa' => $siswa]);
     }
@@ -141,7 +140,6 @@ class KelasController extends Controller
 
         public function updateAnggota(Request $request)
     {
-       
        $counter = count(request('nis'));
         $nis = request('nis');
         if(request('jenis_kelas')=='Reguler'){

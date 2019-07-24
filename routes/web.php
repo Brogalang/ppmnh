@@ -16,6 +16,10 @@ Route::get('/', function () {
     return view('/front/awal/home');
 })->name('awal');
 
+Route::get('/santri', function () {
+    return view('/front/awal/santri');
+})->name('santri');
+
 
 
 // Route::get('/test', 'PagesController@index'); // localhost:8000/

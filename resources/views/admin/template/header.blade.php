@@ -1,6 +1,10 @@
 <header class="main-header">
 <!-- Logo -->
+<<<<<<< HEAD
 <a href="{{route ('awal')}}" class="logo">
+=======
+<a href="#" class="logo">
+>>>>>>> 57ac118e0dcd6c26ab154f81b4833b28b4e7c092
     <!-- mini logo for sidebar mini 50x50 pixels -->
     <span class="logo-mini"><b>PPM</b>NH</span>
     <!-- logo for regular state and mobile devices -->

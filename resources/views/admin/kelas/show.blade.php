@@ -36,7 +36,7 @@
                 <thead>
                 <tr>
                     <th>NO</th>
-                    <th>NIS</th>
+                    <th>ID</th>
                     <th>Nama</th>
                    <!--  <th>Wali Kelas</th>
                     <th>NO Ruangan</th> -->
@@ -58,7 +58,7 @@
                 <tfoot>
                 <tr>
                     <th>NO</th>
-                    <th>NIS</th>
+                    <th>ID</th>
                     <th>Nama</th>
                    <!--  <th>Nama</th>
                     <th>Wali Kelas</th>

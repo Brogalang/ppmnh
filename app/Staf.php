@@ -17,7 +17,16 @@ class Staf extends Model
     	'tempat_lahir_staf',
     	'tgl_lahir_staf',
     	'no_telp_staf',
+<<<<<<< HEAD
         'univ_staf',
+=======
+    	'tgl_masuk_staf',
+        'pend_terakhir_staf',
+        'jabatan_staf',
+        'boarding_staf',
+        'status_nikah_staf',
+        'jumlah_kel_staf',
+>>>>>>> 57ac118e0dcd6c26ab154f81b4833b28b4e7c092
         'image'
     ];
 }

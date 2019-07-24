@@ -125,6 +125,7 @@ class GuruController extends Controller
         $guru->tgl_lahir = request('tgl_lahir');
         $guru->no_telp = request('no_telp');
         $guru->status_nikah = request('status_nikah');
+
         // if(!is_null($request->file('image'))){
         //     $file = $request->file('image')->store('public/files/guru');
         //     $filename = $request->file('image')->hashName();
@@ -171,7 +172,6 @@ class GuruController extends Controller
         'tgl_lahir' => $request->tgl_lahir,
         'no_telp' => $request->no_telp,
         'status_nikah' => $request->status_nikah
-        
         ]);
 
         return redirect('/guru');

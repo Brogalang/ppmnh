@@ -84,8 +84,6 @@
 
                   <div class="col-sm-10">
                     <input name="univ_staf" type="text" class="form-control" id="inputUniv" required>
-                  </div>
-                </div>
               </div>
               <!-- /.box-body -->
               <div class="box-footer">
