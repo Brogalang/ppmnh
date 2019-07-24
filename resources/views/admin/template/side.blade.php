@@ -39,7 +39,7 @@
         </a>
         
     </li>
-    <li class="">
+    <!-- <li class="">
         <a href="{{url('/staf')}}">
         <i class="fa fa-users"></i>
         <span>Staff</span>
@@ -48,7 +48,7 @@
         </span>
         </a>
         
-    </li>
+    </li> -->
     @endif
     @if(Gate::check('isBimbel')|| Gate::check('isSuper_admin')|| Gate::check('isAdmin'))
     <li class="">
@@ -66,7 +66,7 @@
     <li class="">
         <a href="{{url('/kelas')}}">
         <i class="fa fa-sitemap"></i>
-        <span>Kelas</span>
+        <span>Penerobos</span>
         <span class="">
             <i class="fa fa-angle-double-right pull-right" style="margin-right:10px;"></i>
         </span>

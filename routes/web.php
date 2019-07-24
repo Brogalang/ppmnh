@@ -11,9 +11,13 @@
 |
 */
 
+
 Route::get('/', function () {
-    return view('/company/base');
+    return view('/front/awal/home');
 });
+
+
+
 // Route::get('/test', 'PagesController@index'); // localhost:8000/
 // Route::get('/absensiswasekolah/getUsers/{id}','AbsensiSiswaSekolahController@getUsers');
 

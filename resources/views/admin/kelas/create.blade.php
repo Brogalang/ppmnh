@@ -51,17 +51,7 @@
                 </div>
               </div>
 
-              <!-- <div class="form-group">
-                  <label for="inputPraPasca" class="col-sm-2">Pra/Pasca Mubaligh (*Khusus kelas pengajian)</label>
-
-                  <div class="col-sm-10">
-                    <div class="col-sm-10">
-                    <input name="prapasca" type="radio" id="inutPraPasca" value="Pra Mubaligh" checked>Pra Mubaligh<br>
-                    <input name="prapasca" type="radio" id="inutPraPasca" value="Pasca Mubaligh">Pasca Mubaligh
-                  </div>
-                </div>
-              </div>
-            </div> -->
+             
               <!-- /.box-body -->
               <div class="box-footer">
                 <button type="reset" class="btn btn-default">Reset</button>
