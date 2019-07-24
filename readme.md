@@ -2,7 +2,7 @@
 
 Clone use https  
 ~~~~
-git clone https://github.com/RefauRah/KerjaPraktek.git
+git clone https://github.com/Brogalang/ppmnh.git
 ~~~~
 Pull code
 ~~~~
@@ -20,7 +20,4 @@ git checkout -b development
 ~~~~
 Kalo mau Login harus di migrate
 
-coba kalo mau pake fake database bisa
-php artisan db:seed --class=AbsensiSeeder
-php artisan db:seed --class=SiswaSeeder
 

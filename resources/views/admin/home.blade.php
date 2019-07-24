@@ -13,6 +13,29 @@
 <section class="content">
     <div class="col-xs-12" style="padding-top:50px">
         <div class="row">
+            <a href="{{url('kelas')}}">
+                <div class="col-md-4">
+                    <div class="box box-default">
+                        <div class="box-header with-border">
+                            <i class="fa fa-users"></i>
+
+                            <h3 class="box-title">Penerobos</h3>
+                        </div>
+                        <!-- /.box-header -->
+                        <div class="box-body text-center">
+                        <i class="fa fa-users" style="font-size:100px"></i>
+                        </div>
+                        <!-- /.box-body -->
+                        <div class="box-footer text-center">
+                            <p style="font-size:20px">Data Penerobos PPMNH</p>
+                        </div>
+                        <!-- /.box-footer -->
+                    </div>
+                    <!-- /.box -->
+                </div>
+            </a>
+            <!-- /.col -->
+
             <a href="{{url('guru')}}">
                 <div class="col-md-4">
                     <div class="box box-default">
@@ -23,34 +46,11 @@
                         </div>
                         <!-- /.box-header -->
                         <div class="box-body text-center">
-                        <i class="fa fa-users" style="font-size:100px"></i>
-                        </div>
-                        <!-- /.box-body -->
-                        <div class="box-footer text-center">
-                            <p style="font-size:20px">Data Guru PSDI</p>
-                        </div>
-                        <!-- /.box-footer -->
-                    </div>
-                    <!-- /.box -->
-                </div>
-            </a>
-            <!-- /.col -->
-
-            <a href="{{url('/mapel')}}">
-                <div class="col-md-4">
-                    <div class="box box-default">
-                        <div class="box-header with-border">
-                            <i class="fa fa-users"></i>
-
-                            <h3 class="box-title">Mata Pelajaran</h3>
-                        </div>
-                        <!-- /.box-header -->
-                        <div class="box-body text-center">
                         <i class="fa fa-book" style="font-size:100px"></i>
                         </div>
                         <!-- /.box-body -->
                         <div class="box-footer text-center">
-                            <p style="font-size:20px">Data Mapel PSDI</p>
+                            <p style="font-size:20px">Data Guru PPMNH</p>
                         </div>
                         <!-- /.box-footer -->
                     </div>
@@ -65,7 +65,7 @@
                         <div class="box-header with-border">
                             <i class="fa fa-users"></i>
 
-                            <h3 class="box-title">Siswa</h3>
+                            <h3 class="box-title">Santri</h3>
                         </div>
                         <!-- /.box-header -->
                         <div class="box-body text-center">
@@ -73,7 +73,7 @@
                         </div>
                         <!-- /.box-body -->
                         <div class="box-footer text-center">
-                            <p style="font-size:20px">Data Siswa PSDI</p>
+                            <p style="font-size:20px">Data Santri PPM NH</p>
                         </div>
                         <!-- /.box-footer -->
                     </div>
