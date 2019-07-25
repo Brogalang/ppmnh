@@ -9,6 +9,7 @@ use App\Http\Requests;
 use App\Staf;
 use PDF;
 use DB;
+use App\AbsenStaf;
 
 
 class StafController extends Controller
@@ -85,6 +86,52 @@ class StafController extends Controller
         }
 
         return view('admin.staf.show', ['staf' => $nip_staf], ['hadirPersen' => $hadirPersen]);
+    }
+
+    public function showMetamorph(Staf $nip_staf)
+    {
+        if(\Gate::allows('isPasca_mubaligh')){
+            abort(403,"Sorry, You can't access here");
+        }
+        elseif(\Gate::allows('isPesantren')){
+            abort(403,"Sorry, You can't access here");
+        }
+        elseif(\Gate::allows('isBimbel')){
+            abort(403,"Sorry, You can't access here");
+        }
+        elseif(\Gate::allows('isSmarter')){
+            abort(403,"Sorry, You can't access here");
+        }
+         elseif(\Gate::allows('isPra_mubaligh')){
+            abort(403,"Sorry, You can't access here");
+        }
+
+        if((DB::table('absenstaf')->select(DB::raw('count(*) as absen_count'))->where('nip_staf','=',$nip_staf->nip_staf)->value('absen_count'))>0){
+            $hadirMax = DB::table('absenstaf')
+                         ->select(DB::raw('count(*) as absen_count'))
+                         ->where('nip_staf','=',$nip_staf->nip_staf)
+                         ->value('absen_count');
+            // return $hadirMax;
+            $hadirlist = DB::table('absenstaf')
+                         ->select(DB::raw('count(*) as absen_count'))
+                         ->where([
+                            ['absen_staf', '=', 'hadir'],
+                            ['nip_staf', '=', $nip_staf->nip_staf]
+                        ])
+                         // ->groupBy('status')
+                         ->value('absen_count');
+            $hadirPersen = ($hadirlist/$hadirMax)*100; 
+        }
+        else{
+            $hadirPersen = 0;
+        }
+
+        $staf = DB::table('absenstaf')
+        ->join('staf', 'absenstaf.nip_staf', '=', 'staf.nip_staf')
+        ->select('absenstaf.*', 'staf.nama_staf')
+        ->get();
+
+        return view('front.awal.metamorphshow', ['staf' => $nip_staf], ['hadirPersen' => $hadirPersen]);
     }
     
     public function create()

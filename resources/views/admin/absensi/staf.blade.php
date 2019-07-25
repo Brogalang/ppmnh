@@ -22,8 +22,9 @@
     <div class="col-xs-12">
         <div class="box">
             <div class="box-header">
-                <div class="col col-sm-1">
-                        <label>Tanggal</label>
+                <div class="row form-group">
+                    <div class="col col-sm-1">
+                        <label for="tanggal" class="form-control-label">Tanggal</label>
                     </div>
                     <div class="input-group">
                         <div class="input-group-addon">
@@ -31,9 +32,26 @@
                         </div>
                         <input type="date" class="form-control" style="width:17%" name="tgl_absen" required>
                     </div>
+                </div>
                 <!-- /.input group -->
             <!-- </div> -->
 <!-- /.box-header -->
+            
+            <div class="row form-group">
+                    <div class="col col-sm-1">
+                        <label for="sesi" class=" form-control-label">Sesi</label>
+                    </div>
+                    <div class="input-group">
+                        <select class="form-control" name="pertemuan">
+                            <option value="Subuh">Subuh</option>
+                            <option value="Pagi 1">Pagi 1</option>
+                            <option value="Pagi 2">Pagi 2</option>
+                            <option value="Siang">Siang</option>
+                            <option value="Malam">Malam</option>
+                        </select>
+                    </div>
+                </div>    
+
             <div class="box-body">
                 <table id="example1" class="table table-bordered table-striped">
                 <thead>

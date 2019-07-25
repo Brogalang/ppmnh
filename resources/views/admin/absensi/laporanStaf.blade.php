@@ -37,7 +37,7 @@
                     <th>Nama</th>
                     <th>Status Absen</th>
                     <th>Tangal/date</th>
-                    <th>Jenis Aktifitas</th>
+                    <th>Pertemuan</th>
                     <th>Keterangan</th>
                 </tr>
                 </thead>
@@ -50,7 +50,7 @@
                     <td>{{ $staf->nama_staf}}</td>
                     <td>{{ $staf->absen_staf}}</td>
                     <td>{{ $staf->tgl_absen_staf}}</td>
-                    <td></td>
+                    <td>{{ $staf->pertemuan}}</td>
                     <td>{{ $staf->keterangan_staf}}</td>
             
                 <?php $nomer++; ?>

@@ -7,6 +7,7 @@ use App\Http\Controllers\Controller;
 
 use DB;
 use App\AbsenStaf;
+use App\Staf;
 
 class AbsenStafController extends Controller
 {
@@ -43,6 +44,7 @@ class AbsenStafController extends Controller
 			    $staf = new AbsenStaf;
 				$staf->nip_staf = $nip_staf[$i];
 		        $staf->absen_staf = request('absen_staf');
+		        $staf->pertemuan = request('pertemuan');
 		        $staf->keterangan_staf = request('keterangan_staf');
 		        $staf->tgl_absen_staf = request('tgl_absen');
 		        $staf->save();
@@ -72,12 +74,41 @@ class AbsenStafController extends Controller
 
     public function metamorph()
     {
+    	$query  = "SELECT * FROM contacts WHERE contact_id='$id' and user_id='1'";
+
      	$users = DB::table('absenstaf')
 		->join('staf', 'absenstaf.nip_staf', '=', 'staf.nip_staf')
-		->select('absenstaf.*', 'staf.nama_staf')
+		->select('absenstaf.*', 'staf.nama_staf','=',$nip_staf)
 		->get();
    
        return view('front.awal.metamorphabsen',['users'=>$users]);
+    }
+
+    public function showMetamorph(Staf $nip_staf)
+    {
+        if((DB::table('absenstaf')->select(DB::raw('count(*) as absen_count'))->where('nip_staf','=',$nip_staf->nip_staf)->value('absen_count'))>0){
+            $hadirMax = DB::table('absenstaf')
+                         ->select(DB::raw('count(*) as absen_count'))
+                         ->where('nip_staf','=',$nip_staf->nip_staf)
+                         ->value('absen_count');
+            // return $hadirMax;
+            $hadirlist = DB::table('absenstaf')
+                         ->select(DB::raw('count(*) as absen_count'))
+                         ->where([
+                            ['absen_staf', '=', 'hadir'],
+                            ['nip_staf', '=', $nip_staf->nip_staf]
+                        ])
+                         // ->groupBy('status')
+                         ->value('absen_count');
+            $hadirPersen = ($hadirlist/$hadirMax)*100; 
+        }
+        else{
+            $hadirPersen = 0;
+        }
+
+        $staf= DB::table('absenstaf')->get();
+
+        return view('front.awal.metamorphshow', ['staf' => $nip_staf], ['hadirPersen' => $hadirPersen]);
     }
 
 }

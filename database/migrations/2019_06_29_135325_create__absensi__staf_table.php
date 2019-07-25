@@ -17,6 +17,7 @@ class CreateAbsensiStafTable extends Migration
             $table->bigIncrements('id');
             $table->bigInteger('nip_staf');
             $table->char('absen_staf',100);
+            $table->string('pertemuan');
             $table->date('tgl_absen_staf');
             $table->string('keterangan_staf',100)->nullable();
             // $table->string('id_kegiatan',20);

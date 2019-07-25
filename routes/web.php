@@ -25,6 +25,7 @@ Route::get('/santri', function () {
 // })->name('metamorph');
 Route::get('/metamorph', 'stafController@metamorph')->name('metamorph');
 Route::get('/absen_metamorph', 'absenstafController@metamorph')->name('absen_metamorph');
+Route::get('/metamorph/show/{nip_staf}', 'absenstafController@showMetamorph')->middleware('auth')->name('showMetamorph');
 
 
 
