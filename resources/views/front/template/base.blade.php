@@ -112,7 +112,7 @@
                         </ul>
                       </li>
                       <li><a href="{{route('santri')}}">Tim Kreatif</a></li>
-                      <li><a href="about.html">Guru</a></li>
+                      <li><a href="about.html">Metamorph</a></li>
                       <li><a href="{{url('/home')}}">Login</a></li>
                     </ul>
                   </div>

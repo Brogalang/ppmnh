@@ -1,8 +1,8 @@
 @extends('front.template.base')
 @section('content')
 <div style="height: 113px;"></div>
+
     <div class="slide-one-item home-slider owl-carousel">
-      
       <div class="site-blocks-cover" style="background-image: url(assets/front/images/IMG_1397.jpg);" data-aos="fade" data-stellar-background-ratio="0.5">
         <div class="container">
           <div class="row align-items-center justify-content-center">
@@ -42,7 +42,7 @@
             <p>Semua kegiatan yang ada di PPM Barokah, yuk daftar..!</p>
           </div>
         </div>
-
+<!-- 
         <div class="row">
           <div class="col-12 text-center mb-3">
             <h3 class="h5"><span class="text-uppercase">&ldquo;Thy Kingdom Come&rdquo;</span> &mdash; <span class="small"><em>by</em> Pastor Edward Cane</span></h3>
@@ -54,38 +54,44 @@
                 </audio> -->
             </div>
           </div>
-        </div>
+        </div> -->
 
       </div>
     </div>
-    
-    <div class="site-section">
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col-md-6 mb-5 mb-md-0">
-          
-              <div class="img-border">
-                <a href="https://vimeo.com/28959265" class="popup-vimeo image-play">
-                  <span class="icon-wrap">
-                    <span class="icon icon-play"></span>
-                  </span>
-                  <img src="images/about_3.jpg" alt="" class="img-fluid">
-                </a>
-              </div>
-        
-          </div>
-          <div class="col-md-5 ml-auto">
-            <h2 class="h2 mb-3">About Our Church</h2>
-            <p class="h5 mb-3">We are helping people with the Cretor!</p>
-            <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque, nisi Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit nobis magni eaque velit eum, id rem eveniet dolor possimus voluptas..</p>
-            <p><a href="https://vimeo.com/28959265" class="popup-vimeo text-uppercase">Watch Video <span class="icon-arrow-right small"></span></a></p>
+
+       <div class="site-block-half d-flex">
+        <div class="image bg-image" style="background-image: url(assets/front/images/tumblr_oc4v1sxUPo1rbth4yo1_1280.jpg);"></div>
+        <div class="text">
+          <div class="section-heading text-left">
+            <h2 class="mb-5">Our Home</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio autem dolorem vero asperiores itaque officia, assumenda sapiente iste, labore unde nulla facilis fugiat non iure nobis veritatis! Labore, corporis, velit.</p>
+            <p><a href="{{route('our_3')}}" class="text-uppercase">Read More <span class="icon-arrow-right small"></span></a></p>
           </div>
         </div>
       </div>
-    </div>
+          <div class="site-block-half d-flex">
+       <div class="image bg-image order-2" style="background-image: url(assets/front/images/membaca-al-quran-menjauhkan-dari-maksiat.jpg);"></div>
+        <div class="text">
+          <div class="section-heading text-left">
+            <h2 class="mb-5">Our Teacher</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio autem dolorem vero asperiores itaque officia, assumenda sapiente iste, labore unde nulla facilis fugiat non iure nobis veritatis! Labore, corporis, velit.</p>
+            <p><a href="{{route('our_2')}}" class="text-uppercase">Read More <span class="icon-arrow-right small"></span></a></p>
+          </div>
+        </div>
+      </div>
+             <div class="site-block-half d-flex">
+        <div class="image bg-image" style="background-image: url(assets/front/images/back-view-portrait-of-boys-men-best-friends-vector-15608960.jpg);"></div>
+        <div class="text">
+          <div class="section-heading text-left">
+            <h2 class="mb-5">Our Family</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio autem dolorem vero asperiores itaque officia, assumenda sapiente iste, labore unde nulla facilis fugiat non iure nobis veritatis! Labore, corporis, velit.</p>
+            <p><a href="{{route('our')}}"class="text-uppercase">Read More <span class="icon-arrow-right small"></span></a></p>
+          </div>
+        </div>
+      </div>
 
     
-
+<!-- 
     <div class="site-section site-block-feature bg-light">
       <div class="container">
         <div class="d-block d-md-flex border-bottom">
@@ -117,7 +123,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
 
     
 
@@ -126,7 +132,7 @@
       <div class="container">
         <div class="row">
           <div class="col-md-6 mx-auto text-center mb-5 section-heading">
-            <h2>Recent Events</h2>
+            <h2>Event Terbaru</h2>
           </div>
         </div>
 
@@ -140,8 +146,8 @@
                   <img src="images/img_1.jpg" alt="" class="img-fluid">
                 </a>
               </div>
-              <h2 class="heading mb-0"><a href="#">Church Bible Study</a></h2>
-              <span class="mb-3 d-block post-date">January 20, 2018 &bullet; By <a href="#">Josh Holmes</a></span>
+              <h2 class="heading mb-0"><a href="#">Asrama Hadist Muslim (Amuse) 1</a></h2>
+              <span class="mb-3 d-block post-date">July 28, 2019 &bullet; <a href="#"></a></span>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio dolores culpa qui aliquam placeat nobis veritatis tempora natus rerum obcaecati.</p>
             </div>
           
@@ -151,8 +157,8 @@
                   <img src="images/img_2.jpg" alt="" class="img-fluid">
                 </a>
               </div>
-              <h2 class="heading mb-0"><a href="#">Church Building Accomplishments in January 2018</a></h2>
-              <span class="mb-3 d-block post-date">January 20, 2018 &bullet; By <a href="#">Josh Holmes</a></span>
+              <h2 class="heading mb-0"><a href="#">Metamorph 2019</a></h2>
+              <span class="mb-3 d-block post-date">January 20, 2019 &bullet; By <a href="#">Josh Holmes</a></span>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio dolores culpa qui aliquam placeat nobis veritatis tempora natus rerum obcaecati.</p>
             </div>
           
@@ -162,11 +168,11 @@
                   <img src="images/img_3.jpg" alt="" class="img-fluid">
                 </a>
               </div>
-              <h2 class="heading mb-0"><a href="#">Learn How To Pray</a></h2>
+              <h2 class="heading mb-0"><a href="#">PPM NH GO</a></h2>
               <span class="mb-3 d-block post-date">January 20, 2018 &bullet; By <a href="#">Josh Holmes</a></span>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio dolores culpa qui aliquam placeat nobis veritatis tempora natus rerum obcaecati.</p>
             </div>
-
+<!-- 
             <div class="media-with-text">
               <div class="img-border-sm mb-4">
                 <a href="https://vimeo.com/28959265" class="popup-vimeo image-play">
@@ -176,7 +182,7 @@
               <h2 class="heading mb-0"><a href="#">Church Bible Study</a></h2>
               <span class="mb-3 d-block post-date">January 20, 2018 &bullet; By <a href="#">Josh Holmes</a></span>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio dolores culpa qui aliquam placeat nobis veritatis tempora natus rerum obcaecati.</p>
-            </div>
+            </div> -->
           
             <div class="media-with-text">
               <div class="img-border-sm mb-4">
@@ -184,10 +190,10 @@
                   <img src="images/img_2.jpg" alt="" class="img-fluid">
                 </a>
               </div>
-              <h2 class="heading mb-0"><a href="#">Church Building Accomplishments in January 2018</a></h2>
-              <span class="mb-3 d-block post-date">January 20, 2018 &bullet; By <a href="#">Josh Holmes</a></span>
+              <h2 class="heading mb-0"><a href="#">Asrama Hadist Muslim (Amuse) 1</a></h2>
+              <span class="mb-3 d-block post-date">July 28, 2019 &bullet; <a href="#"></a></span>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio dolores culpa qui aliquam placeat nobis veritatis tempora natus rerum obcaecati.</p>
-            </div>
+            </div><!-- 
           
             <div class="media-with-text">
               <div class="img-border-sm mb-4">
@@ -231,7 +237,7 @@
               <h2 class="heading mb-0"><a href="#">Learn How To Pray</a></h2>
               <span class="mb-3 d-block post-date">January 20, 2018 &bullet; By <a href="#">Josh Holmes</a></span>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio dolores culpa qui aliquam placeat nobis veritatis tempora natus rerum obcaecati.</p>
-            </div>
+            </div> -->
           
 
 
