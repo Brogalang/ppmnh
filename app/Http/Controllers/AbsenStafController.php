@@ -74,11 +74,11 @@ class AbsenStafController extends Controller
 
     public function metamorph()
     {
-    	$query  = "SELECT * FROM contacts WHERE contact_id='$id' and user_id='1'";
+    	// $query  = "SELECT * FROM contacts WHERE contact_id='$id' and user_id='1'";
 
      	$users = DB::table('absenstaf')
 		->join('staf', 'absenstaf.nip_staf', '=', 'staf.nip_staf')
-		->select('absenstaf.*', 'staf.nama_staf','=',$nip_staf)
+		->select('absenstaf.*', 'staf.nama_staf')
 		->get();
    
        return view('front.awal.metamorphabsen',['users'=>$users]);

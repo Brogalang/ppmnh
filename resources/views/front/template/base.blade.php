@@ -45,11 +45,8 @@
       }
 
       #myBtn:hover {
-<<<<<<< HEAD
-        background-color: none;
-=======
+
         background-color: black;
->>>>>>> 57ac118e0dcd6c26ab154f81b4833b28b4e7c092
       }
 
       .button-flat-circle {
@@ -118,7 +115,7 @@
                       </li>
 
                       <li><a href="{{route('santri')}}">Tim Kreatif</a></li>
-                      <li><a href="about.html">Guru</a></li>
+                      <li><a href="{{route('metamorph')}}">Metamorph</a></li>
                       <li><a href="{{url('/home')}}">Login</a></li>
                     </ul>
                   </div>

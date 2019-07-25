@@ -24,10 +24,10 @@
               @csrf
               <div class="box-body">
                 <div class="form-group">
-                  <label for="inputNIP" class="col-sm-2">NIP</label>
+                  <label for="inputNIP" class="col-sm-2">ID</label>
 
                   <div class="col-sm-10">
-                    <input name="nip_staf" type="text" class="form-control" id="inputNIP" placeholder="No Induk Pegawai" required>
+                    <input name="nip_staf" type="text" class="form-control" id="inputNIP" placeholder="No Santri Baru" required>
                   </div>
                 </div>
                 <div class="form-group">

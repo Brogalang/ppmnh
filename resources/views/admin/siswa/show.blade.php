@@ -39,7 +39,7 @@
                 <tbody>
 
                 <tr>
-                    <th>NIS</th>
+                    <th>ID</th>
                     <td>{{$key->nis}}</td>
                 </tr>
                 

@@ -24,10 +24,10 @@
             {{ csrf_field() }}
               <div class="box-body">
                 <div class="form-group">
-                  <label for="inputNIK" class="col-sm-2">NIS</label>
+                  <label for="inputNIK" class="col-sm-2">ID</label>
 
                   <div class="col-sm-10">
-                    <input name='nis' type="number" class="form-control" id="inputNIK" placeholder="No Induk Siswa" required>
+                    <input name='nis' type="number" class="form-control" id="inputNIK" placeholder="ID Santri Lama" required>
                   </div>
                 </div>
                 <div class="form-group">

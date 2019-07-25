@@ -37,6 +37,13 @@ class SiswaController extends Controller
         $siswa = SiswaModel::with('kelas')->get();
         return view('admin/siswa/siswa', ['siswa' => $siswa]);
     }
+
+    public function santri()
+    {
+        $siswa = SiswaModel::all();
+        $siswa = SiswaModel::with('kelas')->get();
+        return view('front/awal/santrilama', ['siswa' => $siswa]);
+    }
     
     /*public function show(siswa $id)
     {

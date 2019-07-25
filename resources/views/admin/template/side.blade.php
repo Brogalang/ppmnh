@@ -61,7 +61,7 @@
         </a>
         
     </li>
-    
+
     <li class="">
         <a href="{{url('/siswa')}}">
         <i class="fa fa-users"></i>
@@ -78,6 +78,17 @@
         <a href="{{url('/kelas')}}">
         <i class="fa fa-sitemap"></i>
         <span>Penerobos</span>
+        <span class="">
+            <i class="fa fa-angle-double-right pull-right" style="margin-right:10px;"></i>
+        </span>
+        </a>
+        
+    </li>
+
+    <li class="">
+        <a href="{{url('/slider')}}">
+        <i class="fa fa-sitemap"></i>
+        <span>Slider</span>
         <span class="">
             <i class="fa fa-angle-double-right pull-right" style="margin-right:10px;"></i>
         </span>

@@ -25,7 +25,7 @@
                 <thead>
                 <tr>
                     <th>NO</th>
-                    <th>NIP</th>
+                    <th>ID</th>
                     <th>Foto</th>
                     <th>Nama</th>
                     <th>Alamat</th>
@@ -77,7 +77,7 @@
                 <tfoot>
                 <tr>
                     <th>NO</th>
-                    <th>NIP</th>
+                    <th>ID</th>
                     <th>Foto</th>
                     <th>Nama</th>
                     <th>Alamat</th>
