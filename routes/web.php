@@ -24,7 +24,7 @@ Route::get('/santri', function () {
 //     return view('/front/awal/metamorph');
 // })->name('metamorph');
 Route::get('/metamorph', 'stafController@metamorph')->name('metamorph');
-Route::get('/absen_metamorph', 'absenstafController@metamorph')->name('absen_metamorph');
+Route::get('/absen_metamorph/show/{nip_staf}', 'absenstafController@metamorph')->name('absen_metamorph');
 Route::get('/metamorph/show/{nip_staf}', 'absenstafController@showMetamorph')->name('showMetamorph');
 
 Route::get('/santri_lama','SiswaController@santri')->name('santri_lama');

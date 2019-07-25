@@ -12,7 +12,7 @@
                 <thead>
                 <tr>
                     <th>NO</th>
-                    <th>Nama</th>
+                    <th>ID</th>
                     <th>Status Absen</th>
                     <th>Tangal/date</th>
                     <th>Pertemuan</th>
@@ -24,7 +24,7 @@
                 @foreach ($users as $staf)
                 <tr>
                     <td>{{$nomer}}</td>
-                    <td>{{ $staf->nama_staf}}</td>
+                    <td>{{ $staf->nip_staf}}</td>
                     <td>{{ $staf->absen_staf}}</td>
                     <td>{{ $staf->tgl_absen_staf}}</td>
                     <td>{{ $staf->pertemuan}}</td>
@@ -35,6 +35,9 @@
                 @endforeach
                 </tbody>
               </table>
+              <center>
+                <button type="button" onclick="history.back();" class="btn btn-danger">Back</button>
+                </center>
             </div>
           </div>
         </div>

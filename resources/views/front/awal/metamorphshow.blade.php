@@ -68,9 +68,11 @@
                 </table>
 
             </div>
+
             <center>
-            <div class="button" style="margin-right:10px;">
-                <a href="{{route('absen_metamorph')}}" class="btn btn-success pull-right">Absensi</a>
+            <div class="button" style="margin-right:10px;"> 
+                <button type="button" onclick="history.back();" class="btn btn-danger">Back</button>
+            <a href="{{route('absen_metamorph', $staf->nip_staf)}}" class="btn btn-info">Absensi</a>
             </div>
             </center>
             

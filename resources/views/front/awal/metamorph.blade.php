@@ -38,7 +38,8 @@
 		                    <td>{{ $row->alamat_staf}}</td>
 		                    <td>{{ $row->univ_staf}}</td>
 		                    <?php $nomer++; ?>
-		                    <td><a href="{{route('showMetamorph', $row->nip_staf)}}" class="btn btn-sm btn-info">Lihat Profil</a></td>
+		                    <td><a href="{{route('showMetamorph', $row->nip_staf)}}" class="btn btn-sm btn-info">
+		                    Lihat Profil</a></td>
 		                </tr>
 
 		                @endforeach

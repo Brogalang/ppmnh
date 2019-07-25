@@ -72,16 +72,12 @@ class AbsenStafController extends Controller
        return view('admin.absensi.laporanStaf',['users'=>$users]);
     }
 
-    public function metamorph()
+    public function metamorph($nip_staf)
     {
-    	// $query  = "SELECT * FROM contacts WHERE contact_id='$id' and user_id='1'";
+        $users = DB::select('select * from absenstaf where nip_staf = ?',[$nip_staf]);
+        // $users = DB::select('select * from siswa where nis = ?',[$nis]);
 
-     	$users = DB::table('absenstaf')
-		->join('staf', 'absenstaf.nip_staf', '=', 'staf.nip_staf')
-		->select('absenstaf.*', 'staf.nama_staf')
-		->get();
-   
-       return view('front.awal.metamorphabsen',['users'=>$users]);
+        return view('front.awal.metamorphabsen',['users'=>$users]);
     }
 
     public function showMetamorph(Staf $nip_staf)
